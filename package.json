@@ -27,5 +27,9 @@
     "Router"
   ],
   "author": "Marco Romero",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MarcCloud/monarch-routes.git"
+  },
   "license": "MIT"
 }
