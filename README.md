@@ -16,7 +16,7 @@ functional programming concepts, and to use it in my own isomorphic apps.
  
 #Use it
 
-`
+```
 import routes from 'monarch-routes';
 
 const routingTable = {
@@ -28,7 +28,7 @@ const monarch = routes(routingTable);
 
 monarch('/users'); // This should return a bunch of people...
 
-`
+```
 That's it. I don't think it could be simpler.
 
 #API
