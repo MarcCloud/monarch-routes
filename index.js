@@ -9,4 +9,4 @@ const executeHandler = curry((handler, ctx)=> handler(ctx));
 // routeState:: Object -> String -> String -> Any
 const routeState = curry((routingTable, url, route)=> Maybe.maybe(null, executeHandler(routingTable[route]), match(route, url)));
 // routerBuilder:: Object -> (String -> Any)
-export default curry((routingTable, url)=> compose(head, filter(notNil), map(routeState(routingTable,url)), keys)(routingTable));
+export default curry((routingTable, url)=> compose(head, filter(notNil), map(routeState(routingTable, url)), keys)(routingTable));

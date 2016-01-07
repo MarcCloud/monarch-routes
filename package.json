@@ -12,15 +12,17 @@
     "babel-cli": "^6.3.17",
     "babel-core": "^6.3.21",
     "babel-eslint": "^4.1.6",
+    "babel-loader": "^6.2.1",
     "babel-preset-es2015": "^6.3.13",
     "babel-preset-stage-0": "^6.3.13",
     "blue-tape": "^0.1.11",
     "eslint": "^1.10.3",
-    "sinon": "^1.17.2"
+    "sinon": "^1.17.2",
+    "webpack": "^1.12.10"
   },
   "scripts": {
     "test": "babel-node test/index",
-    "build": "babel index.js --out-file build/monarch-routes.js"
+    "build": "webpack --config webpack.config.js"
   },
   "keywords": [
     "Isomorphic",
