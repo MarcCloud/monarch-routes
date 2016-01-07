@@ -2,7 +2,7 @@
   "name": "monarch-routes",
   "version": "1.0.0",
   "description": "Simple functional url state router for isomorphic JavaScript applications.",
-  "main": "index.js",
+  "main": "./build/monarch-routes.js",
   "dependencies": {
     "path-to-regexp": "^1.2.1",
     "ramda": "^0.18.0",
@@ -19,7 +19,8 @@
     "sinon": "^1.17.2"
   },
   "scripts": {
-    "test": "babel-node test/index"
+    "test": "babel-node test/index",
+    "build": "babel index.js --out-file build/monarch-routes.js"
   },
   "keywords": [
     "Isomorphic",
