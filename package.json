@@ -1,6 +1,6 @@
 {
   "name": "monarch-routes",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Simple functional url state router for isomorphic JavaScript applications.",
   "main": "./build/monarch-routes.js",
   "dependencies": {
